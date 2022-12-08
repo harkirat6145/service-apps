@@ -1,0 +1,182 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.slick-slider .slick-dots {
+  bottom: 6px;
+  background-color: #ffffffb0;
+  display: flex !important;
+  justify-content: center;
+  align-items: center !important;
+  width: 8%;
+  margin: 0 46%;
+
+}
+
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: #1b21c7;
+  width: 18px;
+  content: '';
+  /* border-top: 5px solid #1b21c7; */
+  border-bottom: 7px solid #1b21c7;
+  position: absolute;
+  top: 6px;
+  border-radius: 3px;
+  height: 0;
+}
+
+.slick-next {
+  right: 76px !important;
+}
+
+.slick-dots li {
+  margin: 0px -2px !important;
+}
+
+.slick-prev {
+  left: 76px !important;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: #165c8f !important;
+}
+
+.slick-dots li button {
+  margin: 0 0 !important;
+  padding: 1px !important;
+}
+
+
+.navbar-toggler {
+  font-size: 11px;
+  margin: 7px;
+  border: none;
+}
+
+.slick-prev::before {
+  content: "" !important;
+}
+
+button.slick-prev.slick-arrow {
+  position: absolute;
+  background-image: url(../public/img/uvrays.jpg) !important;
+  background-size: cover !important;
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+  object-fit: contain;
+  right: 0;
+  border-radius: 50%;
+  background-color: white !important;
+}
+
+.slick-next::before {
+  content: "" !important;
+}
+
+.navbar-toggler-icon {
+
+  background-image: unset;
+}
+
+.navbar-toggler-icon::after {
+  display: inline-block;
+  margin-left: unset !important;
+  vertical-align: unset !important;
+  content: "";
+  border-top: unset !important;
+  border-right: unset !important;
+  border-bottom: unset !important;
+  border-left: unset !important;
+  height: 7px !important;
+  width: 18px !important;
+  border-top: 2px solid !important;
+  border-bottom: 2px solid !important;
+  position: relative;
+  left: 10px;
+  top: -8px;
+  color: white;
+}
+
+.navbar-toggler-icon::before {
+  display: inline-block;
+  content: "";
+  height: 11px !important;
+  width: 18px !important;
+  border-top: 2px solid !important;
+  position: relative;
+  left: 10px;
+  top: 2px;
+  color: white;
+}
+
+button.slick-next.slick-arrow {
+  position: absolute;
+  background-image: url(../public/img/blue-arrow-traffic-sign-right-260nw-1930532666.webp) !important;
+  background-size: cover !important;
+  width: 25px;
+  height: 25px;
+  z-index: 2;
+  object-fit: contain;
+  right: 0;
+  border-radius: 50%;
+  background-color: white !important;
+}
+
+.navbar-toggler:focus {
+  text-decoration: unset !important;
+  outline: unset !important;
+  box-shadow: unset !important;
+}
+
+@media screen and (min-width: 1300px) and (max-width: 2000px) {
+  .slick-prev {
+    bottom: -245px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slick-next {
+    right: 30px !important;
+  }
+
+  .slick-prev {
+    left: 30px !important;
+  }
+
+  .slick-slider .slick-dots {
+    width: 16%;
+    margin: 0px 43%;
+  }
+}
+
+@media screen and (max-width: 568px) {}
+
+@media screen and (max-width: 400px) {
+  .slick-prev {
+    left: 10px !important;
+  }
+
+  .slick-next {
+    right: 10px !important;
+  }
+
+  .arrow .slick-prev {
+    left: 0px !important;
+  }
+
+  .arrow .slick-next {
+    right: 0px !important;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .slick-slider .slick-dots {
+    width: 25%;
+    margin: 0px 37%;
+  }
+}
